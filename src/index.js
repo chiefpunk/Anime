@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-
+import App from './layouts/App';
+import {BrowserRouter} from 'react-router-dom';
+import * as serviceWorker from './services/serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'assets/sass/style.scss';
+import 'assets/css/style.css';
+import 'assets/css/elegant-icons.css';
+import 'assets/css/font-awesome.min.css';
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+    </BrowserRouter>,
   document.getElementById('root')
 );
 
