@@ -1,25 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function NormalCard(props) {
-  console.log("aa:",props);
 
   return (
     <>
-      <div class="product__sidebar__comment__item">
-        <div class="product__sidebar__comment__item__pic">
+      <div className="product__sidebar__comment__item">
+        <div className="product__sidebar__comment__item__pic">
           <img src={props.image} alt="" />
         </div>
-        <div class="product__sidebar__comment__item__text">
+        <div className="product__sidebar__comment__item__text">
           <ul>
-            {props.categories.map((category) => (
-              <li>{category}</li>
+            {props.categories.map((category,index) => (
+              <li key={index}>{category}</li>
             ))}
           </ul>
           <h5>
-            <a href="#">{props.title}</a>
+            <Link to="/">{props.title}</Link>
           </h5>
           <span>
-            <i class="fa fa-eye"></i> {props.views} Viewes
+            <i className="fa fa-eye"></i> {props.views} Viewes
           </span>
         </div>
       </div>

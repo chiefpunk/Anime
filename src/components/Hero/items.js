@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Items(props) {
   return (
@@ -9,9 +10,9 @@ export default function Items(props) {
             <div class="label">Adventure</div>
             <h2>Fate / Stay Night: Unlimited Blade Works</h2>
             <p>After 30 days of travel across the world...</p>
-            <a href="#">
+            <Link to="/">
               <span>Watch Now</span> <i class="fa fa-angle-right"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

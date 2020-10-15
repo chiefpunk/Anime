@@ -1,11 +1,12 @@
 import React from "react";
 import Card from "components/Card";
 
-export default function Index(props) {
+export default function CommentVideos(props) {
   return (
     <>
-      {props.videos.map((video) => (
+      {props.videos.map((video, index) => (
         <Card
+          key={index}
           type="3"
           title={video.title}
           image={video.image}

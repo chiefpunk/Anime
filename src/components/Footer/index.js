@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "components/Logo";
 import Menu from "components/Menu";
+import { Link } from "react-router-dom";
 
 export default function Footer(props) {
   const footerMenu = [
@@ -17,9 +18,9 @@ export default function Footer(props) {
     <>
       <footer className="footer">
         <div className="page-up">
-          <a href="#" id="scrollToTopButton">
+          <Link to="/" id="scrollToTopButton">
             <span className="arrow_carrot-up"></span>
-          </a>
+          </Link>
         </div>
         <div className="container">
           <div className="row">

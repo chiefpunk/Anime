@@ -1,26 +1,27 @@
 import React from "react";
 import Card from "components/Card";
+import Button from "components/Button";
 
 export default function FeatureVideos(props) {
   return (
     <>
-      <div class="row">
-        <div class="col-lg-8 col-md-8 col-sm-8">
-          <div class="section-title">
+      <div className="row">
+        <div className="col-lg-8 col-md-8 col-sm-8">
+          <div className="section-title">
             <h4>{props.feature_title}</h4>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-          <div class="btn__all">
-            <a href="#" class="primary-btn">
-              View All <span class="arrow_right"></span>
-            </a>
+        <div className="col-lg-4 col-md-4 col-sm-4">
+          <div className="btn__all">
+            <Button to="/" className="primary-btn">
+              View All <span className="arrow_right"></span>
+            </Button>
           </div>
         </div>
       </div>
-      <div class="row">
-        {props.videos.map((video) => (
-          <div class="col-lg-4 col-md-6 col-sm-6">
+      <div className="row">
+        {props.videos.map((video, index) => (
+          <div className="col-lg-4 col-md-6 col-sm-6" key={index}>
             <Card
               episode={video.episode}
               comments={video.comments}

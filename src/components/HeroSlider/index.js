@@ -55,7 +55,7 @@ export default class HeroSlider extends React.Component {
                   <h3 className="slider__slide-subheading">{slide.category || slide.title}</h3>
                   <h2 className="slider__slide-heading">
                       {/* {slide.title} */}
-                    {slide.title.split('').map(l => <span>{l}</span>)}
+                    {slide.title.split('').map((l,i) => <span key={i}>{l}</span>)}
                   </h2>
                   {/* <p className="slider__slide-readmore">Watch Now</p> */}
                   <a href={slide.link}><span>Watch Now</span> <i className="fa fa-angle-right"></i></a>

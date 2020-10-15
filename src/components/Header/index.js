@@ -2,7 +2,6 @@ import React from "react";
 import Menu from "components/Menu";
 import Logo from "components/Logo";
 import HeaderRight from "./HeaderRight";
-import { Link, useLocation } from "react-router-dom";
 export default function Header(props) {
   const menu = [
     { to: "/", label: "Homepage", submenu: [] },
