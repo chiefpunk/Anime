@@ -1,0 +1,52 @@
+{
+    "TrendVideos": [
+    {
+        "episode":"18/18",
+        "comments":"11",
+        "views":"9141",
+        "title":"The Seven Deadly Sins: Wrath of the Gods",
+        "categories":["Active", "Movie"],
+        "image":"assets/img/trending/trend-1.jpg"
+    },
+    {
+        "episode":"18/18",
+        "comments":"11",
+        "views":"9141",
+        "title":"Gintama Movie 2: Kanketsu-hen - Yorozuya yo Eien",
+        "categories":["Active", "Movie"],
+        "image":"assets/img/trending/trend-2.jpg"
+    },
+    {
+        "episode":"18/18",
+        "comments":"11",
+        "views":"9141",
+        "title":"Shingeki no Kyojin Season 3 Part 2",
+        "categories":["Active", "Movie"],
+        "image":"assets/img/trending/trend-3.jpg"
+    },
+    {
+        "episode":"18/18",
+        "comments":"11",
+        "views":"9141",
+        "title":"Fullmetal Alchemist: Brotherhood",
+        "categories":["Active", "Movie"],
+        "image":"assets/img/trending/trend-4.jpg"
+    },
+    {
+        "episode":"18/18",
+        "comments":"11",
+        "views":"9141",
+        "title":"Shiratorizawa Gakuen Koukou",
+        "categories":["Active", "Movie"],
+        "image":"assets/img/trending/trend-5.jpg"
+    },
+    {
+        "episode":"18/18",
+        "comments":"11",
+        "views":"9141",
+        "title":"Code Geass: Hangyaku no Lelouch R2",
+        "categories":["Active", "Movie"],
+        "image":"assets/img/trending/trend-6.jpg"
+    }
+]
+}

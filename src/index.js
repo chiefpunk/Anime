@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import App from './layouts/App';
 import {BrowserRouter} from 'react-router-dom';
 import * as serviceWorker from './services/serviceWorker';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'assets/sass/style.scss';
-import 'assets/css/style.css';
+import 'assets/css/bootstrap.min.css';
 import 'assets/css/elegant-icons.css';
 import 'assets/css/font-awesome.min.css';
+import 'assets/css/style.css';
+
 ReactDOM.render(
   <BrowserRouter>
     <App />
