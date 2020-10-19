@@ -37,19 +37,19 @@ export default function Index(props) {
                   </div>
                   <div class="anime__details__rating">
                     <div class="rating">
-                      <a href="#">
+                      <a href="/">
                         <i class="fa fa-star"></i>
                       </a>
-                      <a href="#">
+                      <a href="/">
                         <i class="fa fa-star"></i>
                       </a>
-                      <a href="#">
+                      <a href="/">
                         <i class="fa fa-star"></i>
                       </a>
-                      <a href="#">
+                      <a href="/">
                         <i class="fa fa-star"></i>
                       </a>
-                      <a href="#">
+                      <a href="/">
                         <i class="fa fa-star-half-o"></i>
                       </a>
                     </div>
