@@ -35,26 +35,6 @@ export default function Index(props) {
                     <h3>{title}</h3>
                     <span>フェイト／ステイナイト, Feito／sutei naito</span>
                   </div>
-                  <div class="anime__details__rating">
-                    <div class="rating">
-                      <a href="/">
-                        <i class="fa fa-star"></i>
-                      </a>
-                      <a href="/">
-                        <i class="fa fa-star"></i>
-                      </a>
-                      <a href="/">
-                        <i class="fa fa-star"></i>
-                      </a>
-                      <a href="/">
-                        <i class="fa fa-star"></i>
-                      </a>
-                      <a href="/">
-                        <i class="fa fa-star-half-o"></i>
-                      </a>
-                    </div>
-                    <span>1.029 Votes</span>
-                  </div>
                   <p>
                     Every human inhabiting the world of Alcia is branded by a
                     “Count” or a number written on their body. For Hina’s
@@ -107,7 +87,7 @@ export default function Index(props) {
                     </div>
                   </div>
                   <div class="anime__details__btn">
-                    <a href="#" class="follow-btn">
+                    <a href="/" class="follow-btn">
                       <i class="fa fa-heart-o"></i> Follow
                     </a>
                     <Link to={`/watch/${title}`} class="watch-btn">
