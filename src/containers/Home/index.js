@@ -1,9 +1,9 @@
 import React from "react";
 import FeatureVideos from "components/FeatureVideos";
 import VIDEO_DATA from "./videos";
-import TopVideos from "../../pages/User/AnimeDetail/node_modules/components/TopVideos";
+import TopVideos from "components/TopVideos";
 import CommentVideos from "components/CommentVideos";
-import SectionTitle from "../../pages/User/AnimeDetail/node_modules/components/SectionTitle";
+import SectionTitle from "components/SectionTitle";
 
 export default function HomeContainer(props) {
   return (
