@@ -1,10 +1,12 @@
 import React from "react";
 import Card from "components/Card";
+import VIDEO_DATA from "./videos";
 
-export default function CommentVideos(props) {
+export default function CommentVideos() {
+  // console.log(VIDEO_DATA);
   return (
     <>
-      {props.videos.map((video, index) => (
+      {VIDEO_DATA.map((video, index) => (
         <Card
           key={index}
           type="3"

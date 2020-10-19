@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2>GET: https://lookmovie.ag/web-api/v1/movies/list?q=italy</h2>
+<p>Response:</p>
+<pre>
+{
+   "pagination":{
+      "per_page":40,
+      "current_page":1,
+      "total_pages":1,
+      "next_page":"http://lookmovie.ag/web-api/v1/movies/list?p=1&q=italy",
+      "prev_page":"http://lookmovie.ag/web-api/v1/movies/list?p=1&q=italy"
+   },
+   "items":{
+      "total":3,
+      "per_page":40,
+      "collection":[
+         {
+            "imdb_rating":"6.8",
+            "id_movie":"49628",
+            "slug":"6957966-little-italy-2018",
+            "shard_url":"/storage3/",
+            "flag_quality":"8",
+            "year":"2018",
+            "release_date":"2018-08-24 00:00:00",
+            "title":"Little Italy",
+            "description":"Former childhood pals Leo and Nikki are attracted to each other as adults—but will their feuding parents' rival pizzerias put a chill on their sizzling romance?",
+            "duration":"102",
+            "poster":"/kBkINhyhP7kGbkb19B6gwZBz3EV.jpg"
+         },
+      ]
+   }
+}
+</pre>
+
+<p><b>pagination</b> - can use this get links to next_page and prev_page.</p>
+<p><b>items.collection.[0].poster</b> - movie poster. To create movie poster you should prepend url to poster. example: "https://image.tmdb.org/t/p/w342/oKYF5HmimhnGJ3x8G20WHeNpKkT.jpg". Not all movies have poster. If no poster, then field is empty.</p>
+<p>Other fields self-explanatory.</p>
+
+</body>
+</html>

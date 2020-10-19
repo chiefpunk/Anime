@@ -1,0 +1,74 @@
+<h2>GET: https://lookmovie.ag/web-api/v1/movies/trending</h2>
+
+<p>Response:</p>
+  <pre>
+  {
+   "pagination":{
+      "per_page":20,
+      "current_page":1,
+      "total_pages":968,
+      "next_page":"http://lookmovie.ag/web-api/v1/movies/trending?p=2",
+      "prev_page":"http://lookmovie.ag/web-api/v1/movies/trending?p=1"
+   },
+   "items":{
+      "per_page":20,
+      "total":19358,
+      "collection":[
+         {
+            "imdb_rating":"5.9",
+            "id_movie":"49351",
+            "slug":"6643972-triple-threat-2018",
+            "year":"2019",
+            "title":"Triple Threat",
+            "flag_quality":"8",
+            "description":"A crime syndicate places a hit on a billionaire's daughter, making her the target of an elite assassin squad. A small band of down-and-out mercenaries protects her, fighting tooth and nail to stop the assassins from reaching their target.",
+            "poster":"/oKYF5HmimhnGJ3x8G20WHeNpKkT.jpg",
+            "cast":"[{\"id\": \"4935\", \"hero\": \"Payu\", \"name\": \"Tony Jaa\", \"role\": \"actor\", \"picture_url\": \"/qq0uXKe3aKaAE04QQ0BvbbFFufF.jpg\"}, {\"id\": \"29020\", \"hero\": \"Jaka\", \"name\": \"Iko Uwais\", \"role\": \"actor\", \"picture_url\": \"/88pugc3eLWksrR4AcufCEnCsQ7J.jpg\"}, {\"id\": \"30274\", \"hero\": \"Long Fei\", \"name\": \"Tiger Hu Chen\", \"role\": \"actor\", \"picture_url\": \"/49EWQmIg5fxJd1sEOiUODNvQzh5.jpg\"}, {\"id\": \"15246\", \"hero\": \"Collins\", \"name\": \"Scott Adkins\", \"role\": \"actor\", \"picture_url\": \"/mX5vlgiyJ8XdvBUMlFe6FVQ9YDh.jpg\"}, {\"id\": \"4637\", \"hero\": \"Devereaux\", \"name\": \"Michael Jai White\", \"role\": \"actor\", \"picture_url\": \"/zvt4lOlPVVq1MZXmJDWNmBQDnWl.jpg\"}, {\"id\": \"12643\", \"hero\": \"Joey\", \"name\": \"Michael Bisping\", \"role\": \"actor\", \"picture_url\": \"/ofeuLzoKQ7FRE7XEiEcPaZarsfE.jpg\"}, {\"id\": \"32859\", \"hero\": \"Xian\", \"name\": \"Celina Jade\", \"role\": \"actor\", \"picture_url\": \"/7ZY6xC4AupLjnupwkFYZMjBwQwJ.jpg\"}, {\"id\": \"5080\", \"hero\": \"Mook\", \"name\": \"JeeJa Yanin\", \"role\": \"actor\", \"picture_url\": \"/bn2lvCteBqhdBFF5iewGQ56Amq7.jpg\"}, {\"id\": \"2349\", \"hero\": \"\", \"name\": \"Jesse V. Johnson\", \"role\": \"director\", \"picture_url\": \"\"}]",
+            "genres":"[{\"title\": \"Thriller\", \"id_genre\": \"53\"}, {\"title\": \"Action\", \"id_genre\": \"28\"}]",
+            "priority":"1"
+         }
+      ]
+   },
+   "featured_items":{
+      "total":16,
+      "collection":[
+         {
+            "id_movie":"49351",
+            "slug":"6643972-triple-threat-2018",
+            "shard_url":"/storage4/",
+            "title":"Triple Threat",
+            "year":"2019",
+            "poster":"/oKYF5HmimhnGJ3x8G20WHeNpKkT.jpg",
+            "date_added":"2019-03-30 06:00:02",
+            "description":"A crime syndicate places a hit on a billionaire's daughter, making her the target of an elite assassin squad. A small band of down-and-out mercenaries protects her, fighting tooth and nail to stop the assassins from reaching their target.",
+            "backdrop":"/2f8fkWSWOVcTlWforoVpsuaCiwI.jpg",
+            "genres":"Thriller, Action",
+            "duration":"96",
+            "imdb_rating":"5.9",
+            "flag_quality":"8"
+         }
+      ]
+   }
+}
+</pre>
+
+<p><b>items</b> - list of movies</p>
+<p><img src="img/m_list_home.png" alt=""></p>
+<br>
+<p><b>items.collection[0].flag_quality</b> - icon showing movie quality, if flag_quality < 7 then its LQ(red icon) OR if flag_quality > 7 its HD and icon is green</p>
+<p><b>items.collection.[0].poster</b> - movie poster. To create movie poster you should prepend url to poster. example: "https://image.tmdb.org/t/p/w342/oKYF5HmimhnGJ3x8G20WHeNpKkT.jpg". Not all movies have poster. If no poster, then field is empty.</p>
+<p>Other fields self-explanatory. items.collection.[0].priority - not used.</p>
+<br>
+
+<p><b>pagination</b> - can use this get links to next_page and prev_page.</p>
+<br>
+
+<p><b>featured_items</b> - slider</p>
+<p><img src="img/m_shome_slider.png" alt=""></p>
+<p><b>featured_items.collection[0].backdrop</b> - its background image of slider. To create background image of slider need to prepend url. Example: "https://image.tmdb.org/t/p/w780/c56qP2v5vDeYd6Kre9DL47VMcUH.jpg". Sometimes movies have no backdrop.</p>
+<p>Other fields self-explanatory.</p>
+<h3>Possible GET parameters:</h3>
+<ul>
+  <li>pp - items per page</li>
+  <li>p - page</li>
+</ul>

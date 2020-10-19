@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2>GET: https://lookmovie.ag/web-api/v1/movies/genres</h2>
+<p>Response:</p>
+<pre>
+  {
+   "3":{
+      "title":"Adventure",
+      "page_title":"Adventure Movies",
+      "url":{
+         "g":"adventure"
+      },
+      "movies":[
+         {
+            "url":"5834278-the-directive-2019",
+            "title":"The Directive",
+            "year":"2019",
+            "flag_quality":"8",
+            "imdb_rating":"2.7",
+            "cover":"/tqMXRAVtdPlAm8WTxX0uiwKb90E.jpg"
+         },
+         {
+            "url":"1255919-holmes-and-watson-2018",
+            "title":"Holmes & Watson",
+            "year":"2018",
+            "flag_quality":"8",
+            "imdb_rating":"3.4",
+            "cover":"/orEUlKndjV1rEcWqXbbjegjfv97.jpg"
+         }
+      ]
+   }
+}
+}
+</pre>
+
+<p><b>root[3].title</b> - Title of genre</p>
+<p><b>root[3].url.g</b> - Genre alias, used to create link to open single genre page</p>
+<p><b>root[3].movies.cover</b>  - Movie poster. To create movie poster you should prepend url to poster. example: "https://image.tmdb.org/t/p/w342/oKYF5HmimhnGJ3x8G20WHeNpKkT.jpg". Not all movies have poster. If no poster, then field is empty.</p>
+
+<h3>Possible GET parameters:</h3>
+<ul>
+   <li>No get parameters at all</li>
+</ul>
+</body>
+</html>

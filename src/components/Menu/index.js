@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 function Menu({ menu, params }) {
   const location = useLocation();
   const path = location.pathname.slice(1);
-  console.log(path);
+  
   const active = (item) => {
     return path === item.label.toLowerCase()
       ? "active"

@@ -16,7 +16,7 @@ export default function NormalCard(props) {
             ))}
           </ul>
           <h5>
-            <Link to="/">{props.title}</Link>
+            <Link to={`/anime/${props.title}`}>{props.title}</Link>
           </h5>
           <span>
             <i className="fa fa-eye"></i> {props.views} Viewes

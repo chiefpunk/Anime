@@ -1,8 +1,9 @@
 import React from "react";
 import FeatureVideos from "components/FeatureVideos";
 import VIDEO_DATA from "./videos";
-import TopVideos from "components/TopVideos";
+import TopVideos from "../../pages/User/AnimeDetail/node_modules/components/TopVideos";
 import CommentVideos from "components/CommentVideos";
+import SectionTitle from "../../pages/User/AnimeDetail/node_modules/components/SectionTitle";
 
 export default function HomeContainer(props) {
   return (
@@ -39,9 +40,7 @@ export default function HomeContainer(props) {
             <div className="col-lg-4 col-md-6 col-sm-8">
               <div className="product__sidebar">
                 <div className="product__sidebar__view">
-                  <div className="section-title">
-                    <h5>Top Views</h5>
-                  </div>
+                  <SectionTitle tag="h5" title="Top Views" />
                   <ul className="filter__controls">
                     <li className="active" data-filter="*">
                       Day
@@ -51,14 +50,14 @@ export default function HomeContainer(props) {
                     <li data-filter=".years">Years</li>
                   </ul>
                   <div className="filter__gallery">
-                    <TopVideos videos={VIDEO_DATA.TopVideos}></TopVideos>
+                    <TopVideos />
                   </div>
                 </div>
                 <div className="product__sidebar__comment">
                   <div className="section-title">
                     <h5>New Comment</h5>
                   </div>
-                  <CommentVideos videos={VIDEO_DATA.CommentVideos}></CommentVideos>
+                  <CommentVideos />
                 </div>
               </div>
             </div>

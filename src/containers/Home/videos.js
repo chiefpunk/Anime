@@ -287,7 +287,6 @@ const videos = {
       image: require("assets/img/sidebar/comment-4.jpg"),
 
     },
-    
   ],
 };
 

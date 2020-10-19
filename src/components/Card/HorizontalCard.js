@@ -14,7 +14,7 @@ export default function HorizantalCard(props) {
           <i className="fa fa-eye"></i> {props.views}
         </div>
         <h5>
-          <Link to="/">{props.title}</Link>
+          <Link to={`/anime/${props.title}`}>{props.title}</Link>
         </h5>
       </div>
     </>

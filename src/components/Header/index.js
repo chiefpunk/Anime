@@ -6,13 +6,13 @@ export default function Header(props) {
   const menu = [
     { to: "/", label: "Homepage", submenu: [] },
     {
-      to: "/",
+      to: "",
       label: "Categories",
       submenu: [
-        { to: "/", label: "Categories" },
-        { to: "/", label: "Anime Details" },
-        { to: "/", label: "Anime Watching" },
-        { to: "/", label: "Blog details" },
+        { to: "/category/Action", label: "Action" },
+        { to: "/category/Adventure", label: "Adventure" },
+        { to: "/category/Animation", label: "Animation" },
+        { to: "/category/Comedy", label: "Comedy" },
       ],
     },
     { to: "/", label: "Our Blog", submenu: [] },
