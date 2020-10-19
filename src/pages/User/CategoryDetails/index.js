@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import VIDEO_DATA from "./videos";
 import BreadcrumbOption from "components/BreadcrumbOption";
 import Card from "components/Card";
