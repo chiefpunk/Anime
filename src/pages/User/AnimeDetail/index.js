@@ -10,7 +10,7 @@ import { Link, useParams } from "react-router-dom";
 
 export default function Index(props) {
   const { title } = useParams();
-  const { status, data, error, isFetching } = useVideo(title);
+  const { status, data } = useVideo(title);
   console.log("detail", data);
   return (
     <>

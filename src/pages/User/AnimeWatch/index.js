@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 export default function Index(props) {
   const { title } = useParams();
-  const { status, data, error, isFetching } = useVideo(title);
+  const { status, data } = useVideo(title);
   console.log("watch", status);
   const episodes = [
     "Ep 01",
@@ -35,9 +35,11 @@ export default function Index(props) {
 
               <div class="col-lg-12">
                 <div class="anime__video__player">
-                <iframe width="800" height="600"
-                src={`https://www.youtube.com/embed/${data.data.attributes.youtubeVideoId}`}>
-                </iframe>
+                  <iframe
+                    width="800"
+                    height="600"
+                    src={`https://www.youtube.com/embed/${data.data.attributes.youtubeVideoId}`}
+                  ></iframe>
                   {/* <video
                     id="player"
                     playsinline

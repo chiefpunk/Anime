@@ -1,15 +1,11 @@
 import React from "react";
-import { useQuery } from "react-query";
 import { ReactQueryDevtools } from "react-query-devtools";
-import axios from "axios";
 import FeatureVideos from "components/FeatureVideos";
 import TopVideos from "components/TopVideos";
 import CommentVideos from "components/CommentVideos";
 import SectionTitle from "components/SectionTitle";
 import Preloader from "components/Preloader";
-import VIDEO_DATA from "./videos";
 import useTrendVideos from "hooks/useTrendVideos";
-import { getGenres } from "services/videoServices";
 
 export default function HomeContainer(props) {
   const { status, data, error, isFetching } = useTrendVideos();
