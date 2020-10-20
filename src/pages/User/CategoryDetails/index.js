@@ -51,14 +51,14 @@ export default function Index(props) {
                 </div>
               </div>
               <div className="product__pagination">
-                <a href="#" className="current-page">
+                <a href="/" className="current-page">
                   1
                 </a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">
+                <a href="/">2</a>
+                <a href="/">3</a>
+                <a href="/">4</a>
+                <a href="/">5</a>
+                <a href="/">
                   <i className="fa fa-angle-double-right"></i>
                 </a>
               </div>
