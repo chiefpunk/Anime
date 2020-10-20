@@ -36,6 +36,7 @@ export default function Index(props) {
               <div class="col-lg-12">
                 <div class="anime__video__player">
                   <iframe
+                    title={data.data.attributes.titles.en_jp}
                     width="800"
                     height="600"
                     src={`https://www.youtube.com/embed/${data.data.attributes.youtubeVideoId}`}

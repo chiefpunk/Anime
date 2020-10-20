@@ -8,7 +8,7 @@ import Preloader from "components/Preloader";
 import useTrendVideos from "hooks/useTrendVideos";
 
 export default function HomeContainer(props) {
-  const { status, data, error, isFetching } = useTrendVideos();
+  const { status, data } = useTrendVideos();
   
   let trendVideos = {};
   if (status === "success") {
