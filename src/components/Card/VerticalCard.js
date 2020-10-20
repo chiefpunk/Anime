@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function VerticalCard(props) {
   return (
     <>
-      <div class="col-lg-4 col-md-6 col-sm-6">
+      <div className="col-lg-4 col-md-6 col-sm-6">
         <div className="product__item">
           <div
             className="product__item__pic set-bg"
@@ -21,12 +21,12 @@ export default function VerticalCard(props) {
           </div>
           <div className="product__item__text">
             <ul>
-              {props.categories.map((category, index) => (
-                <li key={index}>{category}</li>
+              {(props.genres || []).map((genre, index) => (
+                <li key={index}>{genre}</li>
               ))}
             </ul>
             <h5>
-              <Link to={`/anime/${props.title}`}>{props.title}</Link>
+              <Link to={`/anime/${props.videoId}`}>{props.title}</Link>
             </h5>
           </div>
         </div>

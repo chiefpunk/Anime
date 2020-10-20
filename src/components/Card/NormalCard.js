@@ -11,12 +11,12 @@ export default function NormalCard(props) {
         </div>
         <div className="product__sidebar__comment__item__text">
           <ul>
-            {props.categories.map((category,index) => (
-              <li key={index}>{category}</li>
+            {(props.genres || []).map((genre,index) => (
+              <li key={index}>{genre}</li>
             ))}
           </ul>
           <h5>
-            <Link to={`/anime/${props.title}`}>{props.title}</Link>
+            <Link to={`/anime/${props.videoId}`}>{props.title}</Link>
           </h5>
           <span>
             <i className="fa fa-eye"></i> {props.views} Viewes

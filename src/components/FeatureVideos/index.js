@@ -1,9 +1,12 @@
 import React from "react";
+
 import Card from "components/Card";
 import Button from "components/Button";
 import SectionTitle from "components/SectionTitle";
 
 export default function FeatureVideos(props) {
+  console.log(props.videos[0].id);
+
   return (
     <>
       <div className="row">
@@ -20,16 +23,17 @@ export default function FeatureVideos(props) {
       </div>
       <div className="row">
         {props.videos.map((video, index) => (
-            <Card
-              episode={video.episode}
-              comments={video.comments}
-              views={video.views}
-              categories={video.categories}
-              title={video.title}
-              image={video.image}
-              type="1"
-              key = {index}
-            />
+          <Card
+            videoId={video.id}
+            episode={video.episode}
+            comments={video.comments}
+            views={video.views}
+            genres={video.genres}
+            title={video.title}
+            image={video.image}
+            type="1"
+            key={index}
+          />
         ))}
       </div>
     </>

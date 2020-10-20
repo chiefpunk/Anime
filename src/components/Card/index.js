@@ -10,5 +10,6 @@ const CardType = (type, props) => {
 };
 
 export default function Card(props) {
+
   return <>{CardType(props.type, {...props})}</>;
 }
