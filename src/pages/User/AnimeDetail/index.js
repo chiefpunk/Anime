@@ -87,7 +87,7 @@ export default function Index(props) {
                     </div>
                   </div>
                   <div class="anime__details__btn">
-                    <a href="/" class="follow-btn">
+                    <a class="follow-btn">
                       <i class="fa fa-heart-o"></i> Follow
                     </a>
                     <Link to={`/watch/${title}`} class="watch-btn">
